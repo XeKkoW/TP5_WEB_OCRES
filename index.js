@@ -33,3 +33,14 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
 	res.send('respond with a resource');
 });
+
+module.exports = router
+
+let users = [{
+	user: "Arthur"
+	id: "0"
+}];
+
+router.get('/', (req, res) => {
+	res.status(200).json({ 'users'});
+});
