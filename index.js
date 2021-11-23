@@ -37,10 +37,10 @@ router.get('/', function (req, res, next) {
 module.exports = router
 
 let users = [{
-	user: "Arthur"
+	user: "Arthur",
 	id: "0"
 }];
 
 router.get('/', (req, res) => {
-	res.status(200).json({ 'users'});
+	res.status(200).json({ users })
 });
